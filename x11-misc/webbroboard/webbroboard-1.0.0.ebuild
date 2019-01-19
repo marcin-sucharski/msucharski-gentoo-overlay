@@ -8,11 +8,11 @@ MY_PN="WebBroboard"
 
 DESCRIPTION="Webbroboard acts as a browser which copies URL of requested site to clipboard."
 HOMEPAGE="https://github.com/Vifon/WebBroboard"
-SRC_URI="https://github.com/Vifon/${MY_PN}/archive/v${PV}.tar.gz -> ${PN}-${PV}.tar.gz"
+SRC_URI="https://github.com/Vifon/${MY_PN}/archive/v${PV}.tar.gz -> ${PF}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND=""
