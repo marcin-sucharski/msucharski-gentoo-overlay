@@ -1,0 +1,93 @@
+diff --git a/data/meson.build b/data/meson.build
+index 67e2b058..5e0c1666 100644
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -59,17 +59,6 @@ if get_option('systemd')
+   endif
+   con2.set('dynamic_options', '\n'.join(dynamic_options))
+ 
+-  # replace @libexecdir@
+-  configure_file(
+-    input : 'org.freedesktop.fwupd.service.in',
+-    output : 'org.freedesktop.fwupd.service',
+-    configuration : con2,
+-    install: true,
+-    install_dir: join_paths(datadir,
+-                            'dbus-1',
+-                            'system-services'),
+-  )
+-
+   # replace @bindir@
+   configure_file(
+     input : 'fwupd-offline-update.service.in',
+@@ -88,3 +77,19 @@ if get_option('systemd')
+     install_dir: systemdunitdir,
+   )
+ endif
++
++if get_option('systemd') or get_option('elogind')
++  con2 = configuration_data()
++  con2.set('libexecdir', libexecdir)
++
++  # replace @libexecdir@
++  configure_file(
++    input : 'org.freedesktop.fwupd.service.in',
++    output : 'org.freedesktop.fwupd.service',
++    configuration : con2,
++    install: true,
++    install_dir: join_paths(datadir,
++                            'dbus-1',
++                            'system-services'),
++  )
++endif
+diff --git a/meson.build b/meson.build
+index aea7a545..cc847486 100644
+--- a/meson.build
++++ b/meson.build
+@@ -272,6 +272,12 @@ endif
+ if get_option('systemd')
+   systemd = dependency('systemd', version : '>= 211')
+   conf.set('HAVE_SYSTEMD' , '1')
++  conf.set('HAVE_LOGIND' , '1')
++endif
++
++if get_option('elogind')
++  elogind = dependency('libelogind', version : '>= 211')
++  conf.set('HAVE_LOGIND' , '1')
+ endif
+ 
+ if get_option('consolekit')
+diff --git a/meson_options.txt b/meson_options.txt
+index 23ef8cdb..222768a8 100644
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -17,6 +17,7 @@ option('plugin_uefi', type : 'boolean', value : true, description : 'enable UEFI
+ option('plugin_nvme', type : 'boolean', value : true, description : 'enable NVMe support')
+ option('systemd', type : 'boolean', value : true, description : 'enable systemd support')
+ option('systemdunitdir', type: 'string', value: '', description: 'Directory for systemd units')
++option('elogind', type : 'boolean', value : true, description : 'enable elogind support')
+ option('tests', type : 'boolean', value : true, description : 'enable tests')
+ option('udevdir', type: 'string', value: '', description: 'Directory for udev rules')
+ option('efi-cc', type : 'string', value : 'gcc', description : 'the compiler to use for EFI modules')
+diff --git a/src/fu-util-common.c b/src/fu-util-common.c
+index cdeb2ff6..667c142f 100644
+--- a/src/fu-util-common.c
++++ b/src/fu-util-common.c
+@@ -184,7 +184,7 @@ fu_util_update_shutdown (GError **error)
+ 	if (connection == NULL)
+ 		return FALSE;
+ 
+-#ifdef HAVE_SYSTEMD
++#ifdef HAVE_LOGIND
+ 	/* shutdown using logind */
+ 	val = g_dbus_connection_call_sync (connection,
+ 					   "org.freedesktop.login1",
+@@ -229,7 +229,7 @@ fu_util_update_reboot (GError **error)
+ 	if (connection == NULL)
+ 		return FALSE;
+ 
+-#ifdef HAVE_SYSTEMD
++#ifdef HAVE_LOGIND
+ 	/* reboot using logind */
+ 	val = g_dbus_connection_call_sync (connection,
+ 					   "org.freedesktop.login1",
