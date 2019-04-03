@@ -66,8 +66,8 @@ src_install() {
 	fperms 755 "${dir}"/bin/{idea.sh,fsnotifier{,64}}
 
 	if use custom-jdk; then
-		if [[ -d jre ]]; then
-		fperms 755 "${dir}"/jre/jre/bin/{java,jjs,keytool,orbd,pack200,policytool,rmid,rmiregistry,servertool,tnameserv,unpack200}
+		if [[ -d jre64 ]]; then
+		fperms 755 "${dir}"/jre64/bin/{java,jjs,keytool,orbd,pack200,policytool,rmid,rmiregistry,servertool,tnameserv,unpack200,clhsdb,hsdb}
 		fi
 	fi
 
