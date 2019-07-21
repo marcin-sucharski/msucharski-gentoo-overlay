@@ -1,0 +1,6 @@
+# Set of packages required for OpenRC-based installation.
+
+sys-boot/grub:2
+sys-process/cronie
+app-admin/syslog-ng
+app-admin/logrotate

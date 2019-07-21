@@ -1,0 +1,5 @@
+# Set of useful packages for Ansible
+
+app-admin/ansible
+dev-python/python-dopy
+dev-python/dnspython

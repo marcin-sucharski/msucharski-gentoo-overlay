@@ -1,0 +1,2 @@
+# Enable full-tree cryptographic verification of Gentoo repository rsync checkouts using app-portage/gemato.
+sys-apps/portage rsync-verify

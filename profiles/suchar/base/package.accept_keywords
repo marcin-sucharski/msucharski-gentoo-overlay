@@ -1,0 +1,76 @@
+# Ansible
+dev-python/python-dopy ~amd64
+
+# Generic development
+dev-util/perf ~amd64
+
+# CLion
+dev-util/clion ~amd64
+
+# AWS
+dev-python/awscli ~amd64
+dev-python/botocore ~amd64
+
+# Crossdev
+sys-devel/crossdev ~amd64
+
+# Java
+dev-util/idea-ultimate ~amd64
+=dev-java/openjdk-11* ~amd64
+=dev-java/openjdk-bin-11* ~amd64
+sys-apps/baselayout-java ~amd64
+dev-java/gradle-bin ~amd64
+dev-java/maven-bin ~amd64
+dev-java/sbt-bin ~amd64
+
+# Kernel
+=sys-kernel/gentoo-sources-4.19* ~amd64
+=sys-kernel/linux-headers-4.19* ~amd64
+=sys-apps/linux-misc-apps-4.19* ~amd64
+
+# apt-cacher-ng
+net-misc/apt-cacher-ng ~amd64
+
+# Power management
+sys-power/thermald ~amd64
+
+# Spotify
+media-sound/spotify ~amd64
+dev-util/patchelf ~amd64
+
+# Yubikey
+sys-auth/yubikey-personalization-gui ~amd64
+
+# Haskell Annex
+dev-haskell/stm-chans ~amd64
+dev-haskell/persistent-template ~amd64
+dev-haskell/magic ~amd64
+dev-haskell/edit-distance ~amd64
+dev-haskell/ifelse ~amd64
+dev-haskell/aeson-compat ~amd64
+dev-haskell/persistent-sqlite ~amd64
+dev-haskell/uuid-types ~amd64
+dev-haskell/http-api-data ~amd64
+dev-haskell/monad-loops ~amd64
+dev-haskell/path-pieces ~amd64
+dev-haskell/persistent ~amd64
+dev-vcs/git-annex ~amd64
+dev-haskell/monad-logger ~amd64
+dev-haskell/uuid ~amd64
+dev-haskell/disk-free-space ~amd64
+dev-haskell/esqueleto ~amd64
+dev-haskell/bloomfilter ~amd64
+dev-haskell/feed ~amd64
+dev-haskell/resource-pool ~amd64
+dev-haskell/uri-bytestring ~amd64
+dev-haskell/network-info ~amd64
+dev-haskell/unix-compat ~amd64
+
+# fwupd
+sys-apps/fwupd ~amd64
+dev-libs/libxmlb ~amd64  # required by fwupd
+
+# Graphics
+dev-util/clinfo ~amd64
+dev-libs/amdgpu-pro-opencl ~amd64
+dev-util/nvidia-cuda-toolkit ~amd64

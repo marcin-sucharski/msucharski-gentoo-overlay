@@ -1,0 +1,48 @@
+# Set of packages expected on every desktop.
+
+# Security
+app-admin/keepassxc
+
+# Graphics
+media-gfx/gimp
+media-gfx/inkscape
+media-gfx/imagemagick
+
+# Fonts
+media-fonts/source-pro
+media-fonts/fira-code
+media-fonts/noto
+media-fonts/noto-emoji
+
+# Web
+www-client/firefox
+mail-client/thunderbird
+x11-misc/webbroboard
+x11-misc/fireprofile
+
+# Sound
+media-sound/alsa-utils
+media-sound/pavucontrol
+
+# Multimedia
+media-sound/spotify
+media-sound/playerctl
+media-video/mpv
+net-misc/youtube-dl
+media-gfx/viewnior
+
+# Yubikey
+sys-auth/yubikey-personalization-gui
+sys-auth/pam_u2f
+app-crypt/libu2f-host
+
+# Printer
+net-print/cups
+
+# Scanner
+media-gfx/simple-scan
+
+# Other
+sys-apps/fwupd
+lxde-base/lxappearance
+media-gfx/feh

@@ -1,0 +1,28 @@
+# Base make.conf for msucharski-gentoo-overlay.
+
+FEATURES="${FEATURES} split-elog"
+PORTAGE_GPG_DIR="/var/lib/gentoo/gkeys/keyrings/gentoo/release"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --with-bdeps=y --autounmask=n"
+PORTAGE_NICENESS="17"
+
+PORTDIR="/var/db/repos/gentoo"
+DISTDIR="/var/cache/distfiles"
+PKGDIR="/var/cache/packages"
+
+ABI_X86="64"
+
+LC_MESSAGES=C
+
+USE="${USE} dbus"
+USE="${USE} cryptsetup"
+USE="${USE} policykit"
+USE="${USE} -X xcb xft opengl xinerama"
+USE="${USE} networkmanager wifi"
+USE="${USE} -ipv6"
+USE="${USE} zsh-completion fish-completion"
+USE="${USE} vim-syntax"
+USE="${USE} cups"
+USE="${USE} pulseaudio sox"
+
+SANE_BACKENDS=""
+GRUB_PLATFORMS="efi-64"

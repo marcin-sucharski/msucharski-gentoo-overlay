@@ -1,0 +1,5 @@
+# Set of packages required for laptop installations.
+
+app-laptop/laptop-mode-tools
+sys-apps/hdparm
+sys-power/powertop

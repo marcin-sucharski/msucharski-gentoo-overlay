@@ -1,0 +1,7 @@
+#layout:
+#arch		profile_directory				status
+
+# suchar amd64 profiles
+amd64       suchar                          dev
+amd64       suchar/hardened                 dev
+amd64       suchar/hardened/selinux         dev

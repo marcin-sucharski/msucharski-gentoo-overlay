@@ -1,0 +1,59 @@
+# Set of default packages that are expected on every installation
+
+# Base
+app-portage/gentoolkit
+sys-kernel/gentoo-sources
+sys-kernel/genkernel
+app-portage/repoman
+net-misc/openssh
+sys-fs/dosfstools
+sys-fs/lvm2
+sys-fs/cryptsetup
+
+# Editors
+app-vim/selinux-syntax
+app-editors/vim
+
+# Shell
+app-shells/zsh
+app-shells/zsh-completions
+app-shells/gentoo-zsh-completions
+app-shells/fish
+app-misc/tmux
+
+# Shell tools
+app-misc/jq
+sys-process/time
+sys-process/parallel
+sys-apps/less
+app-admin/sudo
+app-misc/mc
+app-text/tree
+net-misc/rsync
+sys-process/htop
+sys-apps/pmount
+app-arch/p7zip
+
+# VCS
+dev-vcs/git
+dev-vcs/git-annex
+
+# Power management
+sys-power/cpupower
+sys-power/thermald
+sys-power/acpilight
+sys-power/suspend
+sys-power/acpid
+
+# SMART
+sys-apps/smartmontools
+
+# Network
+net-misc/networkmanager
+net-analyzer/traceroute
+net-vpn/openvpn
+net-dns/dnscrypt-proxy
+net-dns/bind-tools
+
+# Docker
+app-emulation/docker

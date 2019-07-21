@@ -1,0 +1,3 @@
+sys-libs/libselinux python
+sec-policy/selinux-base open_perms peer_perms ubac -unconfined
+sys-process/audit python

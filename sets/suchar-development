@@ -1,0 +1,21 @@
+# Set of packages required for development.
+
+# Generic
+dev-util/perf
+
+# C/C++
+dev-util/clion
+dev-util/valgrind
+sys-devel/gdb
+
+# Java
+dev-java/icedtea-bin
+dev-java/openjdk-bin
+virtual/jdk
+dev-util/idea-ultimate
+dev-java/gradle-bin
+dev-java/maven-bin
+dev-java/sbt-bin
+
+# Embeddedm
+dev-embedded/dfu-programmer

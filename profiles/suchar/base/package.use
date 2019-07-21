@@ -1,0 +1,168 @@
+# USE flags for basic packages.
+sys-devel/gcc pgo pie ssp pch
+sys-fs/lvm2 thin
+sys-fs/btrfs-progs -convert
+net-misc/ntp caps
+sys-firmware/intel-microcode hostonly initramfs
+dev-libs/libpcre2 pcre16
+dev-libs/libxml2 python
+
+# Enable static linking for util-linux so genkernel works correctly.
+sys-apps/util-linux static-libs
+
+# Enable sqlite USE for Python which is required for ansible, elogind etc.
+dev-lang/python sqlite
+
+# Disable cli USE for dev-python/netaddr to not merge ipython in.
+dev-python/netaddr -cli
+
+# Default packages.
+app-editors/vim -X
+net-misc/openssh -X
+app-misc/mc -edit sftp
+
+# CLion
+dev-util/clion custom-jdk
+
+# Generic development
+dev-util/perf unwind
+
+# Java
+dev-util/idea-ultimate custom-jdk
+dev-java/icedtea -webstart doc shenandoah pch
+dev-java/icedtea-bin -webstart doc
+dev-java/openjdk -webstart jvm_variant_server pch
+dev-java/openjdk-bin -webstart
+dev-util/perf java
+
+# Docker
+app-emulation/docker btrfs container-init hardened seccomp -apparmor -aufs -device-mapper overlay -pkcs11
+app-emulation/runc hardened
+app-emulation/containerd hardened
+
+# dbus
+sys-apps/dbus -user-session
+
+# Enable gtk for policykit for graphical password dialog.
+sys-auth/policykit gtk
+
+# cron
+sys-process/cronie anacron
+
+# Repository mirror
+net-misc/apt-cacher-ng fuse
+
+# Enable text USE for xmlto often used for generating documentation during build time.
+app-text/xmlto text
+
+# apt cacher
+apt-cacher-ng fuse
+
+# Graphics
+x11-base/xorg-server -suid
+x11-libs/libvdpau dri
+x11-libs/libxcb xkb
+x11-drivers/nvidia-drivers X acpi uvm
+x11-drivers/nvidia-drivers -wayland -multilib -abi_x86_32
+
+# Xorg
+media-libs/libepoxy X
+x11-libs/gdk-pixbuf X
+x11-libs/pango X
+x11-libs/cairo X
+x11-libs/gtk+ X
+x11-libs/libxkbcommon X
+dev-cpp/gtkmm X
+dev-cpp/cairomm X
+media-video/mpv X
+media-sound/pulseaudio X
+sys-apps/dbus X
+media-gfx/imagemagick X
+media-libs/imlib2 X
+x11-libs/libva X
+media-libs/gst-plugins-base X
+app-text/mupdf X
+app-editors/emacs X
+gui-wm/sway X
+
+# OpenCL
+media-video/ffmpeg opencl
+dev-libs/beignet ocl-icd
+
+# CUDA
+dev-util/nvidia-cuda-toolkit -debugger -eclipse -profiler
+
+# Desktop applications
+media-fonts/noto cjk
+media-gfx/gimp exif jpeg png smp -jpeg2k -svg
+media-libs/gegl cairo
+app-text/poppler cairo
+media-gfx/inkscape exif imagemagick jpeg latex postscript
+media-gfx/pstoedit plotutils
+media-gfx/imagemagick png jpeg svg raw postscript
+app-text/mupdf opengl openssl -curl -javascript
+net-misc/youtube-dl -offensive
+media-video/mpv cli luajit -alsa -xv
+media-video/ffmpeg openssl libdrm network -pic -gmp
+media-libs/imlib2 jpeg
+x11-libs/gdk-pixbuf jpeg
+app-editors/emacs acl gsettings gtk -gconf -alsa -dynamic-loading -games -sound
+dev-libs/libpcre2 pcre32
+dev-qt/qtwidgets gtk
+dev-wireless/bluez -cups
+media-libs/freetype inifnality harfbuzz
+media-sound/pulseaudio orc -realtime -libsamplerate
+app-admin/keepassxc autotype yubikey
+x11-terms/rxvt-unicode 256-color xft vanilla perl mousewheel font-styles focused-urgency gdk-pixbuf
+
+sys-apps/fwupd gpg man uefi -dell
+
+# Suspend dependencies need static-libs USE flag
+dev-libs/lzo static-libs
+dev-libs/libgpg-error static-libs
+dev-libs/libgcrypt static-libs
+
+# SMART
+sys-apps/smartmontools -daemon -update_drivedb
+
+# Internet
+www-client/firefox hardened hwaccel system-harfbuzz system-icu system-jpeg system-libevent system-libvpx lto -eme-free
+mail-client/thunderbird hardened system-harfbuzz system-icu system-jpeg system-libevent system-libvpx
+
+# For Enigmail
+app-crypt/pinentry gtk
+
+# Network
+net-vpn/openvpn lz4
+net-misc/networkmanager -modemmanager -ppp -wext
+net-firewall/iptables conntrack
+net-dns/dnsmasq dhcp dhcp-tool inotify -auth-dns -id -idn -lua -script
+net-misc/dhcp client server ssl -ldap
+net-dns/dnscrypt-proxy filecaps
+sys-apps/openrc -netifrc
+net-misc/ntp vim-syntax caps
+
+# Printer
+net-print/cups acl dbus pam ssl usb
+net-print/cups acl -java -kerberos -lprng-compat -python -xinetd -zeroconf
+
+# Scanner
+media-gfx/sane-backends usb
+dev-libs/libusb udev
+virtual/libusb udev
+dev-libs/libgusb vala
+
+# Virtualization
+app-emulation/qemu aio caps fdt filecaps gtk ncurses opengl seccomp vhost-net usb virgl vte vnc spice usbredir virtfs
+app-emulation/qemu -accessibility -curl
+app-emulation/libvirt caps dbus libvirtd lvm pcap policykit qemu udev
+app-emulation/libvirt -macvtap -virt-network -vepa -apparmor -phyp -nfs -lxc -rbd -sasl
+app-emulation/virt-manager policykit gtk -gnome-keyring -sasl
+app-emulation/libvirt-glib -vala
+sys-libs/libosinfo -vala
+net-misc/spice-gtk dbus usbredir gtk3
+net-misc/spice-gtk -vala -sasl -mjpeg -lz4 -gstaudio -gstvideo
+
+# Git Annex
+dev-vcs/git-annex network-uri magicmime
+dev-vcs/git-annex -assistant -benchmark -concurrentoutput -dbus -doc -pairing -s3 -torrentparser -webapp -webdav

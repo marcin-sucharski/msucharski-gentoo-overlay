@@ -1,0 +1,8 @@
+# Set of packages for graphical installations using Wayland.
+
+# X compatibility
+suchar-graphical-x::msucharski-gentoo-overlay
+
+# Sway
+gui-wm/sway
+gui-libs/wlroots

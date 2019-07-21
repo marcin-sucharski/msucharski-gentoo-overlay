@@ -1,0 +1,3 @@
+# Set of packages for SELinux profile.
+
+sec-policy/selinux-git

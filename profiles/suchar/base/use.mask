@@ -1,0 +1,4 @@
+consolekit
+gnome
+systemd
+wayland

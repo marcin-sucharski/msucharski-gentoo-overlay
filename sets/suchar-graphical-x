@@ -1,0 +1,28 @@
+# Set of packages that are expected on graphical installations using X
+
+# "Desktop environment"
+x11-wm/i3
+x11-misc/dmenu
+x11-misc/i3status
+x11-misc/i3lock
+x11-misc/dunst
+x11-libs/libnotify
+
+# urxvt
+x11-terms/rxvt-unicode
+x11-misc/urxvt-font-size
+
+# X Server management
+x11-apps/xrandr
+x11-misc/arandr
+x11-apps/xdpyinfo
+x11-apps/xset
+x11-apps/xsetroot
+x11-apps/setxkbmap
+x11-misc/xdg-utils
+x11-misc/xdg-user-dirs
+x11-apps/xev
+x11-apps/xinput
+
+# OpenCL
+dev-util/clinfo
