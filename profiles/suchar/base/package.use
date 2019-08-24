@@ -1,6 +1,6 @@
 # USE flags for basic packages.
 sys-devel/gcc pgo pie ssp pch
-sys-fs/lvm2 thin
+sys-fs/lvm2 -thin
 sys-fs/btrfs-progs -convert
 net-misc/ntp caps
 sys-firmware/intel-microcode hostonly initramfs
