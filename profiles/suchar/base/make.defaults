@@ -1,4 +1,5 @@
 # Base make.conf for msucharski-gentoo-overlay.
+# Default USE flags are defined in globals directory to correctly handle overriding.
 
 FEATURES="${FEATURES} split-elog"
 PORTAGE_GPG_DIR="/var/lib/gentoo/gkeys/keyrings/gentoo/release"
@@ -12,17 +13,6 @@ PKGDIR="/var/cache/packages"
 ABI_X86="64"
 
 LC_MESSAGES=C
-
-USE="${USE} dbus"
-USE="${USE} cryptsetup"
-USE="${USE} policykit"
-USE="${USE} xcb xft opengl xinerama"
-USE="${USE} networkmanager wifi"
-USE="${USE} -ipv6"
-USE="${USE} zsh-completion fish-completion"
-USE="${USE} vim-syntax"
-USE="${USE} cups"
-USE="${USE} pulseaudio sox"
 
 SANE_BACKENDS=""
 GRUB_PLATFORMS="efi-64"

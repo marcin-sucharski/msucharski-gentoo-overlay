@@ -1,0 +1,12 @@
+# Global defaults for USE flags in msucharski-gentoo-overlay.
+
+USE="${USE} dbus"
+USE="${USE} cryptsetup"
+USE="${USE} policykit"
+USE="${USE} -X xcb xft opengl xinerama"
+USE="${USE} networkmanager wifi"
+USE="${USE} -ipv6"
+USE="${USE} zsh-completion fish-completion"
+USE="${USE} vim-syntax"
+USE="${USE} cups"
+USE="${USE} pulseaudio sox"
