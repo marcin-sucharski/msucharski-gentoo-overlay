@@ -55,9 +55,6 @@ net-misc/apt-cacher-ng fuse
 # Enable text USE for xmlto often used for generating documentation during build time.
 app-text/xmlto text
 
-# apt cacher
-net-misc/apt-cacher-ng fuse
-
 # Graphics
 x11-base/xorg-server -suid
 x11-libs/libvdpau dri
