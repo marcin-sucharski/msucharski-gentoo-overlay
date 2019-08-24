@@ -36,7 +36,7 @@ dev-java/openjdk-bin -webstart
 dev-util/perf java
 
 # Docker
-app-emulation/docker btrfs container-init hardened seccomp -apparmor -aufs -device-mapper overlay -pkcs11
+app-emulation/docker btrfs container-init hardened seccomp -apparmor -aufs -device-mapper -overlay -pkcs11
 app-emulation/runc hardened
 app-emulation/containerd hardened
 
