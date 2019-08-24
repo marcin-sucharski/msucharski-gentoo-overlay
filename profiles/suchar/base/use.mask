@@ -1,4 +1,1 @@
-consolekit
 gnome
-systemd
-wayland
