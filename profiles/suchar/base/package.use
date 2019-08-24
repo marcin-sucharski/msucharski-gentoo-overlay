@@ -56,7 +56,7 @@ net-misc/apt-cacher-ng fuse
 app-text/xmlto text
 
 # apt cacher
-apt-cacher-ng fuse
+net-misc/apt-cacher-ng fuse
 
 # Graphics
 x11-base/xorg-server -suid
