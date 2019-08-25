@@ -1,0 +1,2 @@
+# Disable dbus for git-annex.
+dev-vcs/git-annex dbus

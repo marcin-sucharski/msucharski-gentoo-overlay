@@ -81,6 +81,7 @@ media-libs/gst-plugins-base X
 app-text/mupdf X
 app-editors/emacs X
 gui-wm/sway X
+gui-libs/wlroots X
 
 # OpenCL
 media-video/ffmpeg opencl
@@ -92,9 +93,12 @@ dev-util/nvidia-cuda-toolkit -debugger -eclipse -profiler
 # Desktop applications
 media-fonts/noto cjk
 media-gfx/gimp exif jpeg png smp -jpeg2k -svg
+# Required by media-gfx/gimp.
 media-libs/gegl cairo
+# Required by media-gfx/gimp.
 app-text/poppler cairo
 media-gfx/inkscape exif imagemagick jpeg latex postscript
+# Required by media-gfx/inkscape.
 media-gfx/pstoedit plotutils
 media-gfx/imagemagick png jpeg svg raw postscript
 app-text/mupdf opengl openssl -curl -javascript
@@ -102,15 +106,20 @@ net-misc/youtube-dl -offensive
 media-video/mpv cli luajit -alsa -xv
 media-video/ffmpeg openssl libdrm network -pic -gmp
 media-libs/imlib2 jpeg
+# For media-gfx/viewnior.
 x11-libs/gdk-pixbuf jpeg
 app-editors/emacs acl gsettings gtk -gconf -alsa -dynamic-loading -games -sound
 dev-libs/libpcre2 pcre32
 dev-qt/qtwidgets gtk
 dev-wireless/bluez -cups
-media-libs/freetype inifnality harfbuzz
+media-libs/freetype infinality harfbuzz
+media-libs/harfbuzz -icu
 media-sound/pulseaudio orc -realtime -libsamplerate
 app-admin/keepassxc autotype yubikey
 x11-terms/rxvt-unicode 256-color xft vanilla perl mousewheel font-styles focused-urgency gdk-pixbuf
+x11-misc/dmenu xinerama
+media-gfx/feh xinerama
+sys-auth/polkit gtk
 
 sys-apps/fwupd gpg man uefi -dell
 
@@ -123,8 +132,12 @@ dev-libs/libgcrypt static-libs
 sys-apps/smartmontools -daemon -update_drivedb
 
 # Internet
+# Required by firefox.
+media-libs/libpng apng
+media-libs/libvpx postproc
 www-client/firefox hardened hwaccel system-harfbuzz system-icu system-jpeg system-libevent system-libvpx lto -eme-free
 mail-client/thunderbird hardened system-harfbuzz system-icu system-jpeg system-libevent system-libvpx
+www-client/chromium -hangouts jumbo-build -suid -proprietary-codecs
 
 # For Enigmail
 app-crypt/pinentry gtk
@@ -162,4 +175,7 @@ net-misc/spice-gtk -vala -sasl -mjpeg -lz4 -gstaudio -gstvideo
 
 # Git Annex
 dev-vcs/git-annex network-uri magicmime
-dev-vcs/git-annex -assistant -benchmark -concurrentoutput -dbus -doc -pairing -s3 -torrentparser -webapp -webdav
+dev-vcs/git-annex -assistant -benchmark -concurrentoutput -doc -pairing -s3 -torrentparser -webapp -webdav
+
+# Duplicity
+app-backup/duplicity s3
