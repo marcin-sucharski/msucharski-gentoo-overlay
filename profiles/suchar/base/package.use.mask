@@ -1,2 +1,5 @@
 # Disable dbus for git-annex.
 dev-vcs/git-annex dbus
+
+# Disable cups from bluez.
+net-wireless/bluez cups
