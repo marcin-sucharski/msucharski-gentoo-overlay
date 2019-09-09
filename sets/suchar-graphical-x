@@ -23,6 +23,7 @@ x11-misc/xdg-utils
 x11-misc/xdg-user-dirs
 x11-apps/xev
 x11-apps/xinput
+x11-misc/xclip
 
 # OpenCL
 dev-util/clinfo
