@@ -1,6 +1,7 @@
 # Set of default packages that are expected on every installation
 
 # Base
+sys-devel/gcc
 app-portage/gentoolkit
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware

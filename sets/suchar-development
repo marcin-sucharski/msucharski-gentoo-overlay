@@ -16,6 +16,7 @@ dev-python/numpy
 dev-util/clion
 dev-util/valgrind
 sys-devel/gdb
+sys-devel/clang
 
 # Graphics
 dev-util/vulkan-headers
