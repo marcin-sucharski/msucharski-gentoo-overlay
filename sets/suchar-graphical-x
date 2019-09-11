@@ -1,5 +1,8 @@
 # Set of packages that are expected on graphical installations using X
 
+# Base
+x11-base/xorg-server
+
 # "Desktop environment"
 x11-wm/i3
 x11-misc/dmenu
@@ -24,6 +27,8 @@ x11-misc/xdg-user-dirs
 x11-apps/xev
 x11-apps/xinput
 x11-misc/xclip
+x11-misc/xcalib
+x11-misc/xdotool
 
 # OpenCL
 dev-util/clinfo

@@ -5,10 +5,16 @@ app-portage/gentoolkit
 sys-kernel/gentoo-sources
 sys-kernel/genkernel
 app-portage/repoman
-net-misc/openssh
+app-portage/eix
+app-portage/genlop
+app-portage/cpuid2cpuflags
+app-crypt/gentoo-keys
 sys-fs/dosfstools
 sys-fs/lvm2
 sys-fs/cryptsetup
+sys-apps/linux-misc-apps
+sys-block/parted
+dev-lang/python
 
 # Editors
 app-vim/selinux-syntax
@@ -33,6 +39,8 @@ net-misc/rsync
 sys-process/htop
 sys-apps/pmount
 app-arch/p7zip
+sys-process/iotop
+sys-apps/usbutils
 
 # VCS
 dev-vcs/git
@@ -52,8 +60,10 @@ sys-apps/smartmontools
 net-misc/networkmanager
 net-analyzer/traceroute
 net-vpn/openvpn
+net-misc/openssh
 net-dns/dnscrypt-proxy
 net-dns/bind-tools
+net-misc/ntp
 
 # Docker
 app-emulation/docker

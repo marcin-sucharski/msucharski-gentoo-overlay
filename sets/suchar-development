@@ -2,6 +2,8 @@
 
 # Generic
 dev-util/perf
+dev-util/strace
+dev-util/cloc
 
 # C/C++
 dev-util/clion

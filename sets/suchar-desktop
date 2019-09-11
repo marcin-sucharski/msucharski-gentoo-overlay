@@ -46,3 +46,6 @@ media-gfx/simple-scan
 sys-apps/fwupd
 lxde-base/lxappearance
 media-gfx/feh
+app-text/atril
+app-misc/neofetch
+sys-apps/dbus

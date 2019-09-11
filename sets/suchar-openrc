@@ -4,3 +4,5 @@ sys-boot/grub:2
 sys-process/cronie
 app-admin/syslog-ng
 app-admin/logrotate
+sys-process/cronbase
+sys-auth/elogind
