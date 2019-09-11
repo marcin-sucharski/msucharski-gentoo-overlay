@@ -4,3 +4,4 @@ app-emulation/qemu
 app-emulation/libvirt
 app-emulation/virt-manager
 net-misc/spice-gtk
+net-misc/dhcp

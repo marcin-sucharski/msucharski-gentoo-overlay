@@ -4,6 +4,7 @@
 dev-util/perf
 dev-util/strace
 dev-util/cloc
+sys-devel/distcc
 
 # Gentoo
 app-doc/eclass-manpages
@@ -30,3 +31,4 @@ dev-java/sbt-bin
 
 # Embedded
 dev-embedded/dfu-programmer
+sys-devel/crossdev

@@ -49,6 +49,7 @@ sys-apps/pmount
 app-arch/p7zip
 sys-process/iotop
 sys-apps/usbutils
+sys-apps/lshw
 
 # VCS
 dev-vcs/git
