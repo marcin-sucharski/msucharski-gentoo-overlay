@@ -15,8 +15,8 @@ media-fonts/noto
 media-fonts/noto-emoji
 
 # Web
-www-client/firefox
-mail-client/thunderbird
+www-client/firefox-bin
+mail-client/thunderbird-bin
 x11-misc/webbroboard
 x11-misc/fireprofile
 
