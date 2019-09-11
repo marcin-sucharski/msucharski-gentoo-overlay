@@ -74,3 +74,4 @@ dev-libs/libxmlb ~amd64  # required by fwupd
 dev-util/clinfo ~amd64
 dev-libs/amdgpu-pro-opencl ~amd64
 dev-util/nvidia-cuda-toolkit ~amd64
+x11-misc/xcalib ~amd64
