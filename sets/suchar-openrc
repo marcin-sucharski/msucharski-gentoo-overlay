@@ -1,8 +1,11 @@
 # Set of packages required for OpenRC-based installation.
 
+sys-apps/openrc
 sys-boot/grub:2
 sys-process/cronie
 app-admin/syslog-ng
 app-admin/logrotate
 sys-process/cronbase
 sys-auth/elogind
+sys-fs/eudev
+sys-apps/memtest86+

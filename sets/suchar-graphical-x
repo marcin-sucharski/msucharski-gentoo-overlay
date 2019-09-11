@@ -2,6 +2,7 @@
 
 # Base
 x11-base/xorg-server
+x11-apps/mesa-progs
 
 # "Desktop environment"
 x11-wm/i3

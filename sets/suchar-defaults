@@ -3,7 +3,9 @@
 # Base
 app-portage/gentoolkit
 sys-kernel/gentoo-sources
+sys-kernel/linux-firmware
 sys-kernel/genkernel
+sys-apps/portage
 app-portage/repoman
 app-portage/eix
 app-portage/genlop
@@ -15,6 +17,12 @@ sys-fs/cryptsetup
 sys-apps/linux-misc-apps
 sys-block/parted
 dev-lang/python
+net-mail/mailutils
+sys-apps/man-db
+sys-auth/polkit
+
+# Filesystem
+sys-fs/btrfs-progs
 
 # Editors
 app-vim/selinux-syntax
@@ -64,6 +72,7 @@ net-misc/openssh
 net-dns/dnscrypt-proxy
 net-dns/bind-tools
 net-misc/ntp
+net-firewall/iptables
 
 # Docker
 app-emulation/docker
