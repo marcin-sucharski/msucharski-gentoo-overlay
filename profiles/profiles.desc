@@ -4,4 +4,5 @@
 # suchar amd64 profiles
 amd64       suchar                          dev
 amd64       suchar/hardened                 dev
-amd64       suchar/hardened/selinux         dev
+amd64       suchar/hardened/openrc          dev
+amd64       suchar/hardened/openrc/selinux  dev
