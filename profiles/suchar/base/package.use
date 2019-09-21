@@ -16,6 +16,9 @@ dev-lang/python sqlite
 # Disable cli USE for dev-python/netaddr to not merge ipython in.
 dev-python/netaddr -cli
 
+# Enable libyaml for improved performance of yaml parsing
+dev-python/pyyaml libyaml
+
 # Default packages.
 app-editors/vim -X
 net-misc/openssh -X
