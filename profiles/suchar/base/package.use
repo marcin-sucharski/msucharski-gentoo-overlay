@@ -128,6 +128,8 @@ x11-misc/dmenu xinerama
 media-gfx/feh xinerama
 sys-auth/polkit gtk
 
+media-libs/gd png
+
 sys-apps/fwupd gpg man uefi -dell
 
 # Suspend dependencies need static-libs USE flag
