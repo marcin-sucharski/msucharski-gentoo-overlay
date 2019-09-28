@@ -1,0 +1,14 @@
+gtk
+X
+xinerama
+xcb
+xft
+opengl
+cups
+dbus
+cryptsetup
+policykit
+networkmanager
+wifi
+pulseaudio
+sox
