@@ -35,14 +35,12 @@ dev-lang/python
 
 app-shells/fish
 app-misc/tmux
-sys-process/parallel
 app-editors/vim
 app-misc/jq
 sys-process/time
 app-arch/p7zip
 sys-process/htop
 app-text/tree
-app-admin/sudo
 dev-vcs/git
 
 dev-util/perf
@@ -56,3 +54,5 @@ virtual/jdk
 dev-java/gradle-bin
 dev-java/maven-bin
 dev-java/sbt-bin
+
+net-libs/nodejs

@@ -12,3 +12,10 @@ networkmanager
 wifi
 pulseaudio
 sox
+alsa
+doc
+harfbuzz
+infinality
+cleartype_hinting
+cairo
+pam

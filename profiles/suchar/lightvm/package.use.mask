@@ -1,0 +1,6 @@
+app-emulation/docker btrfs container-init hardened seccomp
+app-emulation/runc hardened
+app-emulation/containerd hardened btrfs
+dev-vcs/git perl
+sys-apps/portage ipc native-extensions rsync-verify xattr
+app-crypt/gnupg smartcard
