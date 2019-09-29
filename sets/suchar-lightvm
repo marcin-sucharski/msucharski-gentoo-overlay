@@ -4,7 +4,6 @@ app-arch/tar
 app-arch/xz-utils
 app-shells/bash
 net-misc/wget
-sys-apps/baselayout
 sys-apps/coreutils
 sys-apps/file
 sys-apps/findutils
@@ -30,7 +29,6 @@ sys-apps/openrc
 app-admin/syslog-ng
 
 sys-devel/gcc
-sys-apps/linux-misc-apps
 dev-lang/python
 
 app-shells/fish
@@ -47,12 +45,5 @@ dev-util/perf
 dev-util/strace
 
 app-emulation/docker
-
-dev-java/icedtea-bin
-dev-java/openjdk-bin
-virtual/jdk
-dev-java/gradle-bin
-dev-java/maven-bin
-dev-java/sbt-bin
 
 net-libs/nodejs

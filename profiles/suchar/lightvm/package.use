@@ -1,0 +1,7 @@
+app-emulation/docker -btrfs -container-init -hardened -seccomp
+app-emulation/runc -hardened
+app-emulation/containerd -hardened -btrfs
+dev-vcs/git -perl
+app-crypt/gnupg -smartcard
+dev-util/perf -java
+sys-apps/shadow -cracklib
