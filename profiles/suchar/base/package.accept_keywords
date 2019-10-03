@@ -16,6 +16,8 @@ sys-devel/crossdev ~amd64
 
 # Java
 dev-util/idea-ultimate ~amd64
+=dev-java/openjdk-8* ~amd64
+=dev-java/openjdk-bin-8* ~amd64
 =dev-java/openjdk-11* ~amd64
 =dev-java/openjdk-bin-11* ~amd64
 sys-apps/baselayout-java ~amd64
