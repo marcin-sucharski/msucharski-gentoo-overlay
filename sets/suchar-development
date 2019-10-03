@@ -22,7 +22,6 @@ sys-devel/clang
 dev-util/vulkan-headers
 
 # Java
-dev-java/icedtea-bin
 dev-java/openjdk-bin:8
 dev-java/openjdk-bin:11
 virtual/jdk

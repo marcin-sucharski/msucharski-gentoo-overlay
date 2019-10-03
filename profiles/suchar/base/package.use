@@ -38,8 +38,8 @@ dev-util/perf unwind
 dev-util/idea-ultimate custom-jdk
 dev-java/icedtea -webstart doc shenandoah pch
 dev-java/icedtea-bin -webstart doc
-dev-java/openjdk -webstart jvm_variant_server pch
-dev-java/openjdk-bin -webstart
+dev-java/openjdk -webstart jvm_variant_server pch gentoo-vm
+dev-java/openjdk-bin -webstart gentoo-vm
 dev-util/perf java
 
 # Docker
