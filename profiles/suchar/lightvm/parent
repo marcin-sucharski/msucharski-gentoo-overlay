@@ -1,2 +1,2 @@
-gentoo:default/linux/amd64/17.1/no-multilib
+gentoo:default/linux/amd64/17.0/musl
 ../base
