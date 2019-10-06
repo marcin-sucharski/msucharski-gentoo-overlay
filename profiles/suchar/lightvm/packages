@@ -1,8 +1,1 @@
-*sys-fs/eudev
-*app-portage/gentoolkit
-*app-portage/repoman
-*app-portage/eix
-*app-portage/cpuid2cpuflags
-*app-crypt/gentoo-keys
-*sys-apps/man-db
-*dev-vcs/git
+-*
