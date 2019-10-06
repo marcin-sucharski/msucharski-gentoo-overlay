@@ -1,7 +1,3 @@
-*/* -hardened
-*/* -seccomp
-*/* -btrfs
-
 app-emulation/docker -container-init
 dev-vcs/git -perl
 app-crypt/gnupg -smartcard

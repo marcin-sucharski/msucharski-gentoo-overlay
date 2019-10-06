@@ -19,3 +19,6 @@ infinality
 cleartype_hinting
 cairo
 pam
+hardened
+seccomp
+btrfs
