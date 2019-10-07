@@ -22,3 +22,4 @@ pam
 hardened
 seccomp
 btrfs
+bindist
