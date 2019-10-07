@@ -3,3 +3,4 @@ dev-vcs/git -perl
 app-crypt/gnupg -smartcard
 dev-util/perf -java
 sys-apps/shadow -cracklib
+dev-libs/openssl -bindist
