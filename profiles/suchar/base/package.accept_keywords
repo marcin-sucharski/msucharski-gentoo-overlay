@@ -78,3 +78,8 @@ dev-util/clinfo ~amd64
 dev-libs/amdgpu-pro-opencl ~amd64
 dev-util/nvidia-cuda-toolkit ~amd64
 x11-misc/xcalib ~amd64
+
+# Containers
+app-emulation/libpod ~amd64
+app-emulation/conmon ~amd64
+app-emulation/slirp4netns ~amd64

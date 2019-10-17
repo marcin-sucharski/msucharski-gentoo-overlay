@@ -42,10 +42,11 @@ dev-java/openjdk -webstart jvm_variant_server pch gentoo-vm
 dev-java/openjdk-bin -webstart gentoo-vm
 dev-util/perf java
 
-# Docker
+# Containers
 app-emulation/docker btrfs container-init hardened seccomp -apparmor -aufs -device-mapper -overlay -pkcs11
 app-emulation/runc hardened
 app-emulation/containerd hardened
+app-emulation/libpod btrfs
 
 # dbus
 sys-apps/dbus -user-session
