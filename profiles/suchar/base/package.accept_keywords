@@ -72,6 +72,7 @@ dev-haskell/unix-compat ~amd64
 # fwupd
 sys-apps/fwupd ~amd64
 dev-libs/libxmlb ~amd64  # required by fwupd
+=app-crypt/tpm2-tss-2.2.3 ~amd64 # required by fwupd
 
 # Graphics
 dev-util/clinfo ~amd64
