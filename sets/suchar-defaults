@@ -78,3 +78,4 @@ net-firewall/iptables
 
 # Docker
 app-emulation/docker
+app-emulation/libpod
