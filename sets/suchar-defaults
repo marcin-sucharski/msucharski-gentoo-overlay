@@ -78,4 +78,7 @@ net-firewall/iptables
 
 # Docker
 app-emulation/docker
+
+# Podman
 app-emulation/libpod
+app-emulation/slirp4netns
