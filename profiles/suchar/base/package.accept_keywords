@@ -1,6 +1,9 @@
 # Ansible
 dev-python/python-dopy ~amd64
 
+# Generic
+=sys-apps/shadow-4.7 ~amd64
+
 # Generic development
 dev-util/perf ~amd64
 
