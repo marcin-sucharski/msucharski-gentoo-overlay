@@ -2,7 +2,7 @@
 
 FEATURES="${FEATURES} split-elog"
 PORTAGE_GPG_DIR="/var/lib/gentoo/gkeys/keyrings/gentoo/release"
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --autounmask=n"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --autounmask=n --keep-going=y"
 PORTAGE_NICENESS="17"
 
 PORTDIR="/var/db/repos/gentoo"
