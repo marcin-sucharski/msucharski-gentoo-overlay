@@ -64,7 +64,7 @@ net-misc/apt-cacher-ng fuse
 app-text/xmlto text
 
 # Graphics
-x11-base/xorg-server -suid
+x11-base/xorg-server -suid kdrive xephyr
 x11-libs/libvdpau dri
 x11-libs/libxcb xkb
 x11-drivers/nvidia-drivers X acpi uvm
