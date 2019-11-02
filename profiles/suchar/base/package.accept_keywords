@@ -87,3 +87,6 @@ x11-misc/xcalib ~amd64
 app-emulation/libpod ~amd64
 app-emulation/conmon ~amd64
 app-emulation/slirp4netns ~amd64
+
+# Terminal
+x11-terms/kitty ~amd64
