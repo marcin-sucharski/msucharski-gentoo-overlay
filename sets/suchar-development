@@ -33,3 +33,6 @@ dev-java/sbt-bin
 # Embedded
 dev-embedded/dfu-programmer
 sys-devel/crossdev
+
+# Running VSCode in browser
+www-client/surf

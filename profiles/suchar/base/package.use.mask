@@ -7,3 +7,6 @@ net-wireless/bluez cups
 # Allow openjdk to be default java.
 dev-java/openjdk -gentoo-vm
 dev-java/openjdk-bin -gentoo-vm
+
+# Disable opengl in libwebp
+media-libs/libwebp opengl
