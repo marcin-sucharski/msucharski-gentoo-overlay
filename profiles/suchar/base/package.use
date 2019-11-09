@@ -105,7 +105,7 @@ media-gfx/gimp exif jpeg png smp -jpeg2k -svg
 media-libs/gegl cairo
 # Required by media-gfx/gimp.
 app-text/poppler cairo
-media-gfx/inkscape exif imagemagick jpeg latex postscript
+media-gfx/inkscape exif jpeg latex postscript
 # Required by media-gfx/inkscape.
 media-gfx/pstoedit plotutils
 media-gfx/imagemagick png jpeg svg raw postscript
