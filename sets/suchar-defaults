@@ -75,6 +75,7 @@ net-dns/dnscrypt-proxy
 net-dns/bind-tools
 net-misc/ntp
 net-firewall/iptables
+net-misc/whois
 
 # Docker
 # app-emulation/docker
