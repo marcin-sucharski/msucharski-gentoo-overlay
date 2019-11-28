@@ -128,6 +128,7 @@ x11-terms/rxvt-unicode 256-color xft vanilla perl mousewheel font-styles focused
 x11-misc/dmenu xinerama
 media-gfx/feh xinerama
 sys-auth/polkit gtk
+x11-misc/redshift gtk
 
 media-libs/gd png
 
