@@ -24,7 +24,7 @@ sys-auth/polkit
 
 # Filesystem
 sys-fs/btrfs-progs
-sys-backup/snapper
+app-backup/snapper
 
 # Editors
 app-vim/selinux-syntax
