@@ -123,7 +123,7 @@ dev-wireless/bluez -cups
 media-libs/freetype infinality harfbuzz
 media-libs/harfbuzz -icu
 media-sound/pulseaudio orc -realtime -libsamplerate
-app-admin/keepassxc autotype yubikey
+app-admin/keepassxc autotype yubikey -network
 x11-terms/rxvt-unicode 256-color xft vanilla perl mousewheel font-styles focused-urgency gdk-pixbuf
 x11-misc/dmenu xinerama
 media-gfx/feh xinerama
