@@ -208,6 +208,11 @@ app-emulation/libvirt-glib -vala
 sys-libs/libosinfo -vala
 net-misc/spice-gtk dbus usbredir gtk3
 net-misc/spice-gtk -vala -sasl -mjpeg -lz4 -gstaudio -gstvideo
+# Enable static targets to enable static-user for qemu
+dev-libs/glib static-libs
+sys-libs/zlib static-libs
+sys-apps/attr static-libs
+dev-libs/libpcre static-libs
 
 # Git Annex
 dev-vcs/git-annex network-uri magicmime
