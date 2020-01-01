@@ -1,0 +1,3 @@
+# These USE flags have to be masked for first installation part to avoid dependency cycles.
+media-libs/freetype harfbuzz
+media-libs/mesa vaapi
