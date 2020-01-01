@@ -151,7 +151,7 @@ mail-client/thunderbird hardened system-harfbuzz system-icu system-jpeg system-l
 www-client/chromium -hangouts jumbo-build -suid -proprietary-codecs
 
 # Surf
-net-libs/webkit-gtk -geolocation -gstreamer -jpeg2k -webgl
+net-libs/webkit-gtk -geolocation -gstreamer -jpeg2k webgl
 media-libs/harfbuzz icu
 www-client/surf savedconfig
 
