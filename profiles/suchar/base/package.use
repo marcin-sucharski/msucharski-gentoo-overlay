@@ -199,7 +199,7 @@ virtual/libusb udev
 dev-libs/libgusb vala
 
 # Virtualization
-app-emulation/qemu aio caps fdt filecaps gtk ncurses opengl seccomp vhost-net usb virgl vte vnc spice usbredir virtfs static-user
+app-emulation/qemu doc aio caps fdt filecaps gtk ncurses opengl seccomp vhost-net usb virgl vte vnc spice usbredir virtfs static-user
 app-emulation/qemu -accessibility -curl
 app-emulation/libvirt caps dbus libvirtd lvm pcap policykit qemu udev
 app-emulation/libvirt -macvtap -virt-network -vepa -apparmor -phyp -nfs -lxc -rbd -sasl
