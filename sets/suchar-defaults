@@ -21,6 +21,7 @@ dev-lang/python
 net-mail/mailutils
 sys-apps/man-db
 sys-auth/polkit
+app-arch/unzip
 
 # Filesystem
 sys-fs/btrfs-progs
