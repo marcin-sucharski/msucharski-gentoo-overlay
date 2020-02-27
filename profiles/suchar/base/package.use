@@ -71,7 +71,6 @@ x11-drivers/nvidia-drivers X acpi uvm
 x11-drivers/nvidia-drivers -wayland -multilib -abi_x86_32
 
 # Xorg
-media-libs/mesa opencl
 media-libs/libepoxy X
 x11-libs/gdk-pixbuf X
 x11-libs/pango X
@@ -91,10 +90,6 @@ app-text/mupdf X
 app-editors/emacs X
 gui-wm/sway X
 gui-libs/wlroots X
-
-# OpenCL
-media-video/ffmpeg opencl
-dev-libs/beignet ocl-icd
 
 # CUDA
 dev-util/nvidia-cuda-toolkit -debugger -eclipse -profiler
