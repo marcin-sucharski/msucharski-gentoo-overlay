@@ -50,3 +50,4 @@ app-text/atril
 app-misc/neofetch
 sys-apps/dbus
 x11-misc/redshift
+dev-libs/libusb-compat  # Samsung printer
