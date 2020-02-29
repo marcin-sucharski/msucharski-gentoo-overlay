@@ -95,6 +95,7 @@ gui-libs/wlroots X
 dev-util/nvidia-cuda-toolkit -debugger -eclipse -profiler
 
 # Desktop applications
+sys-apps/flatpak gtk
 media-fonts/noto cjk
 media-gfx/gimp exif jpeg png smp -jpeg2k -svg
 # Required by media-gfx/gimp.
