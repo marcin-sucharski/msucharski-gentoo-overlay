@@ -25,7 +25,6 @@ media-sound/alsa-utils
 media-sound/pavucontrol
 
 # Multimedia
-media-sound/spotify
 media-sound/playerctl
 media-video/mpv
 net-misc/youtube-dl
