@@ -71,6 +71,7 @@ x11-drivers/nvidia-drivers X acpi uvm
 x11-drivers/nvidia-drivers -wayland -multilib -abi_x86_32
 
 # Xorg
+media-libs/libglvnd X
 media-libs/libepoxy X
 x11-libs/gdk-pixbuf X
 x11-libs/pango X
