@@ -25,7 +25,6 @@ dev-util/vulkan-headers
 dev-java/openjdk-bin:8
 dev-java/openjdk-bin:11
 virtual/jdk
-dev-util/idea-ultimate
 dev-java/gradle-bin
 dev-java/maven-bin
 dev-java/sbt-bin
