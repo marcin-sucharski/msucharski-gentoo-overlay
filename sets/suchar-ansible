@@ -3,3 +3,4 @@
 app-admin/ansible
 dev-python/python-dopy
 dev-python/dnspython
+dev-python/dbus-python
